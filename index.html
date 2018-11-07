@@ -41,13 +41,33 @@
       </div>
       <!-- Responsive calendar - END -->
       <div class="article">
-        <div class= "article__title"> 
-          <h3>‘민박고양이’ 히끄의 표정이 다양한 이유</h3>
-           </div>
-        <div class="article__main">
-            <img class="article__image" src="./src/hikk.jpeg" alt="Italian Trulli">
-            <a href="https://www.huffingtonpost.kr/entry/cat-jeju_kr_5add2f90e4b089e33c8954fe#cb"> 기사</a>
+        <h4>2017-11-07 </h4>
+        <div class="article__div">
+          <a href="https://www.huffingtonpost.kr/entry/cat-jeju_kr_5add2f90e4b089e33c8954fe#cb">
+              <div>
+                <h3>‘민박고양이’ 히끄의 표정이 다양한 이유</h3>
+                <img class="article__image" src="./src/hikk.jpeg" alt="Italian Trulli">
+              </div>
+          </a>
         </div>
+
+        <div class="article__div">
+            <a href="https://edition.cnn.com/2018/11/06/politics/2018-election-updates/index.html?no-st=1541589385">
+                <div>
+                  <h3>House Democrats ascendant, set to check Trump's power</h3>
+                  <img class="article__image" src="./src/data1.jpg" alt="Italian Trulli">
+                </div>
+            </a>
+          </div>
+
+          <div class="article__div">
+              <a href="http://mnews.jtbc.joins.com/News/Article.aspx?news_id=NB11723819">
+                  <div>
+                    <h3>찔끔 비, 미세먼지 여전히 심각…수도권 '저감조치' 발령</h3>
+                    <img class="article__image" src="./src/data2.jpg" alt="Italian Trulli">
+                  </div>
+              </a>
+            </div>
 
       </div>
     </div>
@@ -59,9 +79,8 @@
         $(".responsive-calendar").responsiveCalendar({
           time: '2018-11',
           events: {
-            "2018-11-01": {"number": 5, "url": "http://w3widgets.com/responsive-slider"},
-            "2018-11-12": {"number": 1, "url": "http://w3widgets.com"}, 
-            "2018-11-25":{"number": 1}, 
+            // "2018-11-07": {"number": 2, "url": "https://news.naver.com/main/ranking/read.nhn?mid=etc&sid1=111&rankingType=popular_day&oid=052&aid=0001213455&date=20181107&type=2&rankingSeq=1&rankingSectionId=103"}, 
+            "2018-11-07":{"number": 3}, 
             "2013-06-12": {}}
         });
       });
