@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Responsive Calendar Widget that will make your day</title>
+    <title>Neworks</title>
     <meta name="distributor" content="Global" />
     <meta itemprop="contentRating" content="General" />
     <meta name="robots" content="All" />
@@ -49,7 +49,8 @@
 
       <!-- Responsive calendar - END -->
       <div class="article">
-        <h4>2018-11-07 </h4>
+      <div class = "article__container_1214">
+        <h4>2018-12-14 </h4>
         <div class="article__div">
           <a href="https://www.huffingtonpost.kr/entry/cat-jeju_kr_5add2f90e4b089e33c8954fe#cb">
               <div>
@@ -76,7 +77,22 @@
                   </div>
               </a>
             </div>
-
+        </div>
+      
+      <div class = "article__container_1211" style="display : none">
+        <h4>2018-12-11 </h4>
+        <div class="article__div">
+          <a href="https://news.naver.com/main/read.nhn?mode=LPOD&mid=sec&oid=001&aid=0010514791&isYeonhapFlash=Y&rc=N">
+              <div>
+                <h3>"한겨울인가" 전국이 강추위에 꽁꽁…철원 영하 20.6도</h3>
+                <img class="article__image" src="https://imgnews.pstatic.net/image/001/2018/12/09/PYH2018120701390001300_P2_20181209094313346.jpg?type=w647" alt="Italian Trulli">
+              </div>
+          </a>
+        </div>
+        </div>
+          
+      
+      
       </div>
     </div>
     <script src="./js/jquery.js"></script>
@@ -85,11 +101,14 @@
     <script type="text/javascript">
       $(document).ready(function () {
         $(".responsive-calendar").responsiveCalendar({
-          time: '2018-11',
+          time: '2018-12',
           events: {
-            // "2018-11-07": {"number": 2, "url": "https://news.naver.com/main/ranking/read.nhn?mid=etc&sid1=111&rankingType=popular_day&oid=052&aid=0001213455&date=20181107&type=2&rankingSeq=1&rankingSectionId=103"}, 
-            "2018-11-07":{"number": 3}, 
-            "2013-06-12": {}}
+            "2018-12-11": {"number": 1,
+            "content" : "hi"
+            }, 
+            "2018-12-14":{"number": 3,
+            "content" : "? "
+            }}
         });
       });
     </script>

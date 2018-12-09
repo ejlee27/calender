@@ -161,6 +161,9 @@
       },
       addOthers: function(day, dayEvents) {
         var badge;
+        var article;
+        var container;
+
         if (typeof dayEvents === "object") {
           if (dayEvents.number != null) {
             badge = $("<span></span>").html(dayEvents.number).addClass("badge");
@@ -172,6 +175,18 @@
           if (dayEvents.url) {
             day.find("a").attr("href", dayEvents.url);
           }
+          day.click(function(e) {
+           if(dayEvents.number == 1){
+             // 1211 div의 display 를 토글, 1214의 div 도 토글
+             console.log("clicked");
+            $(".article__container_1214").hide();
+            $(".article__container_1211").show();
+          }else if(dayEvents.number == 3){
+            $(".article__container_1214").show();
+            $(".article__container_1211").hide();
+          }
+          })
+          
         }
         return day;
       },
